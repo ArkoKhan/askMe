@@ -1,0 +1,269 @@
+
+/* DEFAULT STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: white;
+}
+body {
+    margin: 0;
+    background-color: rgb(16, 15, 15);
+    text-align: center;
+}
+
+h1, h1 a {
+    color: rgb(195, 13, 13);
+    font-weight: 800;
+    font-size: 3.2rem;
+    font-style: normal;
+}
+
+h2, h3, h2 a, h3 a {
+    color: rgb(0, 60, 255);
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-style: normal;
+}
+
+h4, h5, h6, h4 a, h5 a, h6 a {
+    color: rgb(0, 190, 238);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+a {
+    color: rgb(246, 255, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    
+    text-decoration: underline;
+    color: rgb(167, 255, 25); 
+    
+} 
+p {
+    line-height: 1.9rem;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+
+    /* default */
+    h1, h1 a {
+        font-size: 1.5rem;
+        
+    }
+    
+    h2, h3, h2 a, h3 a {
+        font-size: 1.2rem;
+    }
+    
+    h4, h5, h6, h4 a, h5 a, h6 a {
+    
+        font-size: 1rem;
+
+    }
+    
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+
+}
+
+
+
+
+/* ========================================================== */
+
+
+/* ========= header ============== */
+header {
+    
+    background-color: rgb(30, 28, 28);
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+header > div {
+    align-self: flex-start;
+    width: 50%;
+}
+
+header .header__div2 {
+    text-align: right;
+    float: right;
+    padding-top:15px;
+    padding-right: 30px;
+}
+
+header .header__div2 .resetbtn  {
+    display: inline-block;
+    background-color: rgb(153, 255, 0);
+    padding:0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+
+header .header__div2 .resetbtn i {
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-style: normal;
+    padding: 5px 50px;
+    color: rgb(0, 60, 255);
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+header .header__div2 .resetbtn:hover, header .header__div2 .resetbtn i:hover   {
+    color: rgb(153, 255, 0);
+    background-color: rgb(0, 60, 255);
+   
+}
+
+.logo {
+    display: inline-block;
+    height: 3.2rem;
+    width: 3.2rem;
+    
+}
+.title {
+    padding-left: 5px;
+    display: inline-block;
+
+}
+
+@media (max-width: 768px) {
+
+    header .header__div2 .resetbtn i {
+        font-size: 1.2rem;
+        
+    }
+    
+
+    header .header__div2 {
+        padding-top:8px;
+        padding-right: 10px;
+    }
+    
+    .logo {
+        height: 1.5rem;
+        width: 1.5rem;
+        
+    }
+
+}
+
+/* =============== header end ========== */
+
+/* ========= main body ============ */
+
+.main__sec01 h2 {
+    padding-top: 50px;
+    transition: all 0.5s ease;
+}
+
+.main__sec01 p {
+    padding-top: 40px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+input {
+    background-color: rgb(16, 15, 15);
+    display: block;
+    margin: 120px auto 20px auto;
+    border: 5px solid rgb(74, 239, 181);
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    color: yellow;
+    transition: all 0.5s ease;
+}
+
+button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(237, 227, 252);
+    padding: 10px 100px;
+    background-color: rgb(231, 28, 28);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    color: rgb(172, 172, 172);
+    background-color: rgb(12, 1, 104);
+}
+
+
+.main__sec03 div {
+    margin: 50px;
+    transition: all 1s ease;
+}
+
+.main__sec03  div h2 {
+    padding-top: 20px;
+    font-size: 2.6rem;
+    font-family: cursive;
+}
+
+.main__sec03  div p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: cursive;
+}
+
+
+
+@media (max-width: 990px) {
+    
+    input {
+        width: 85%;
+    }
+}
+
+@media (max-width: 786px) {
+    
+    input {
+        margin: 80px auto 20px auto;
+    }
+    
+    button {
+        margin-top: 20px;
+    }
+
+    .main__sec03  div h2 {
+        padding-top: 10px;
+        font-size: 1.8rem;
+     
+    }
+    
+    .main__sec03  div p {
+        padding-top: 10px;
+        font-size: 1.4rem;
+      
+    }
+}
