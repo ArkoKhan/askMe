@@ -7,7 +7,7 @@ const resetBtn = document.querySelector(".resetbtn");
 
 
 btn.addEventListener("click", function ()  {
-    let number = parseInt(Math.random() * 6) + 1;
+    let number = parseInt(Math.random() * 9) + 1;
     mainTitle.style.paddingTop = "10px";
     mainInfo.style.paddingTop = "10px";
     input.style.marginTop = "10px";
@@ -27,6 +27,12 @@ btn.addEventListener("click", function ()  {
         result.innerHTML = `<h2>Q: ${input.value}</h2> <p>ABSOLUTELY!</p>`;
     } else if (number === 6 && input.value !== "") {
         result.innerHTML = `<h2>Q: ${input.value}</h2> <p>NEVER!</p>`;
+    } else if (number === 7 && input.value !== "") {
+        result.innerHTML = `<h2>Q: ${input.value}</h2> <p>Ask Yourself</p>`;
+    } else if (number === 8 && input.value !== "") {
+        result.innerHTML = `<h2>Q: ${input.value}</h2> <p>I'm not sure!</p>`;
+    } else if (number === 9  && input.value !== "") {
+        result.innerHTML = `<h2>Q: ${input.value}</h2> <p>Try Again</p>`;
     } else {
         result.innerHTML = `<h2>Please! Ask a question</h2>`;
     }
